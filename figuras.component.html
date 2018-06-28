@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+      
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
+      
+
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+      
+<link rel="stylesheet" href="assets/styles.css"/>     
+  
+</head>
+
+<nav id="nav" class="col-lg-12">
+  <ul>
+    <li><a [routerLink]="['/home']" [routerLinkActive]="['activado']">Home</a></li>
+    <li><a [routerLink]="['/productos']" [routerLinkActive]="['activado']">Productos</a></li>
+    <li><a href="#">Crear</a></li>
+  </ul>
+</nav>
+ 
+ <body>
+    
+    
+<h2 text-align='center'>Área de las Figuras</h2>
+
+  
+
+  
+<p>
+  
+<input type="number" [(ngModel)]="a">
+ 
+
+<input type="number" [(ngModel)]="b">
+ 
+<br>
+<br>
+
+<button (click)="areaRectangulo()"> Rectangulo </button>
+  <br>
+  <br>
+
+<button (click)="areaCirculo()"> Círculo </button>
+  <br>
+  <br>
+
+<button (click)="areaTriangulo()"> Triángulo </button>
+  <br>
+  <br>
+
+<button (click)="areaCuadrado()"> Cuadrado </button>
+  <br>
+  <br>
+<button (click)="areaTrapecio()"> Trapecio </button>
+
+  
+<br>
+   RESULTADO: {{resultado}}
+   <button id="clearbutton"> Limpiar </button>
+</p>
+
+</body>
+</html>
